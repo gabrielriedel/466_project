@@ -2,6 +2,8 @@
 
 ## Data
 
+We are using pitch level data from college baseball. Our goal will be to predict what type of pitch is thrown based off of metrics like pitch velocity, spin, vertical movement, horizontal movement, tilt, and others.
+
 ## Random Forest Process
 
 1. Train n decision trees on random subset of training data
