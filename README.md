@@ -6,10 +6,11 @@ We are using pitch level data from college baseball. Our goal will be to predict
 
 ## Random Forest Process
 
-1. Train n decision trees on random subset of training data
+1. Train n decision trees on random subset of features and bootstrapped sample of training data
 2. Each tree votes for a classification, majority classification wins
 3. Use validation set to tune hyperparameters (# of trees, features per split, tree depth, etc.)
 4. Use test set and compute accuracy stats of the model
+5. Obtain Variable Importance Scores 
 
 ## Design Considerations/Steps (Actionable chunks of work to split up)
 
