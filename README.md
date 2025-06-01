@@ -59,4 +59,4 @@ HorzBreak: 3928.0000
 RelSpeed: 3906.0000
 Tilt: 2587.0000
 ```
-[Presentation Link]([www.google.com](https://docs.google.com/presentation/d/1fxwKDUhdskaGK_Ps5NRBn4vG36XBWrHJeXcMbonDqP8/edit?usp=sharing))
+[Presentation Link](https://docs.google.com/presentation/d/1fxwKDUhdskaGK_Ps5NRBn4vG36XBWrHJeXcMbonDqP8/edit?usp=sharing)
