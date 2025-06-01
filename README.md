@@ -18,4 +18,45 @@ We are using pitch level data from college baseball. Our goal will be to predict
 2. Adjust decision tree implementation from lab 7 to work with our data or generic data. 
 3. Create main random forest logic: training n trees on subsets of training data
 4. Create hyperparamter tuning logic: use validation data and run random forest with different hyperparams to find optimal hyper params.
-5. Create model accuracy metric calculations: given test data, find accuracy, precision, recall, f1 score, loss. 
+5. Create model accuracy metric calculations: given test data, find accuracy, precision, recall, f1 score, loss.
+
+## Results:
+
+Trees=10, Depth=5, MinSplit=2 -> Val Acc=0.9079
+Trees=10, Depth=5, MinSplit=5 -> Val Acc=0.9126
+Trees=10, Depth=10, MinSplit=2 -> Val Acc=0.9265
+Trees=10, Depth=10, MinSplit=5 -> Val Acc=0.9321
+Trees=10, Depth=15, MinSplit=2 -> Val Acc=0.9284
+Trees=10, Depth=15, MinSplit=5 -> Val Acc=0.9330
+Trees=50, Depth=5, MinSplit=2 -> Val Acc=0.9172
+Trees=50, Depth=5, MinSplit=5 -> Val Acc=0.9079
+Trees=50, Depth=10, MinSplit=2 -> Val Acc=0.9349
+Trees=50, Depth=10, MinSplit=5 -> Val Acc=0.9321
+Trees=50, Depth=15, MinSplit=2 -> Val Acc=0.9312
+Trees=50, Depth=15, MinSplit=5 -> Val Acc=0.9312
+Trees=100, Depth=5, MinSplit=2 -> Val Acc=0.9079
+Trees=100, Depth=5, MinSplit=5 -> Val Acc=0.9153
+Trees=100, Depth=10, MinSplit=2 -> Val Acc=0.9321
+Trees=100, Depth=10, MinSplit=5 -> Val Acc=0.9312
+Trees=100, Depth=15, MinSplit=2 -> Val Acc=0.9349 <- best one 
+Trees=100, Depth=15, MinSplit=5 -> Val Acc=0.9321
+
+Best Validation Accuracy: 0.9348837209302325
+Test Accuracy with best model: 0.9452690166975881
+
+Confusion Matrix:
+Actual\Pred     0       1       2       3       4
+0               598     5       3       0       0
+1               7       106     1       0       10
+2               5       1       157     0       0
+3               0       0       0       74      3
+4               2       21      0       1       84
+
+Feature Importances:
+InducedVertBreak: 4038.0000
+SpinRate: 4012.0000
+HorzBreak: 3928.0000
+RelSpeed: 3906.0000
+Tilt: 2587.0000
+
+[Presentation Link]([www.google.com](https://docs.google.com/presentation/d/1fxwKDUhdskaGK_Ps5NRBn4vG36XBWrHJeXcMbonDqP8/edit?usp=sharing))
