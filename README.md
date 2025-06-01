@@ -21,7 +21,7 @@ We are using pitch level data from college baseball. Our goal will be to predict
 5. Create model accuracy metric calculations: given test data, find accuracy, precision, recall, f1 score, loss.
 
 ## Results:
-
+```
 Trees=10, Depth=5, MinSplit=2 -> Val Acc=0.9079
 Trees=10, Depth=5, MinSplit=5 -> Val Acc=0.9126
 Trees=10, Depth=10, MinSplit=2 -> Val Acc=0.9265
@@ -58,5 +58,5 @@ SpinRate: 4012.0000
 HorzBreak: 3928.0000
 RelSpeed: 3906.0000
 Tilt: 2587.0000
-
+```
 [Presentation Link]([www.google.com](https://docs.google.com/presentation/d/1fxwKDUhdskaGK_Ps5NRBn4vG36XBWrHJeXcMbonDqP8/edit?usp=sharing))
