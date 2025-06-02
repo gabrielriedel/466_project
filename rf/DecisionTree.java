@@ -10,17 +10,23 @@ public class DecisionTree {
         double threshold;
         TreeNode left, right;
 
+        double impurityReduction;
+        int numSamples;
+
         TreeNode(int prediction) {
             this.isLeaf = true;
             this.prediction = prediction;
         }
 
-        TreeNode(int feature, double threshold, TreeNode left, TreeNode right) {
+        TreeNode(int feature, double threshold, TreeNode left, TreeNode right,
+                double impurityReduction, int numSamples) {
             this.isLeaf = false;
             this.feature = feature;
             this.threshold = threshold;
             this.left = left;
             this.right = right;
+            this.impurityReduction = impurityReduction;
+            this.numSamples = numSamples;
         }
 
         int predict(List<Double> x) {
@@ -30,7 +36,8 @@ public class DecisionTree {
 
         void accumulateImportances(Map<Integer, Double> importance) {
             if (!isLeaf) {
-                importance.put(feature, importance.getOrDefault(feature, 0.0) + 1.0);
+                double weightedReduction = numSamples * impurityReduction;
+                importance.put(feature, importance.getOrDefault(feature, 0.0) + weightedReduction);
                 left.accumulateImportances(importance);
                 right.accumulateImportances(importance);
             }
@@ -94,7 +101,7 @@ public class DecisionTree {
 
         TreeNode left = buildTree(leftX, leftY, depth + 1);
         TreeNode right = buildTree(rightX, rightY, depth + 1);
-        return new TreeNode(bestFeature, bestThreshold, left, right);
+        return new TreeNode(bestFeature, bestThreshold, left, right, bestGain, y.size());
     }
 
     private List<Integer> getRandomFeatures(int totalFeatures) {
