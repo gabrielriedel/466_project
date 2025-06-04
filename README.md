@@ -52,6 +52,12 @@ Actual\Pred     0       1       2       3       4
 3               0       0       0       74      3
 4               2       20      0       1       85
 
+0: Fastball
+1: Cutter
+2: Changeup
+3: Curveball
+4. Slider 
+
 Feature Importances:
 RelSpeed: 61272.2100
 InducedVertBreak: 60527.7550
