@@ -1,2 +1,12 @@
 Log of work done --> who did what and when, how much time was spent on each task
 
+Gabe Riedel:
+
+5/28/25 - Plan scope of project, deliverables, setup project framework - 1 hour
+5/30/25 - Acquire and clean data for analysis - 30 minutes
+6/4/25 - Tweak presentations slides - 20 minutes
+6/5/25 - Create report.pdf - 1 hour
+
+James Irwin:
+
+Brandon Kim:
