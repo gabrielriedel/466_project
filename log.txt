@@ -10,3 +10,7 @@ Gabe Riedel:
 James Irwin:
 
 Brandon Kim:
+
+5/31/2025 - Implement Random Forest - 2 hours
+5/31/2025 - Implement Variable Importance - 3 hours 
+6/2/2025 - Create data visuaizations - 30 minutes 
